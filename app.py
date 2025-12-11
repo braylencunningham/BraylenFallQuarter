@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World!"
+    return "Welcome to my Flask App Home Page!"
 
 @app.route("/greet/<name>")
 def GreetPage(name):

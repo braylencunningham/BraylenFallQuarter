@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.3.8-dist/css/bootstrap.min.css')}}">
     <title>Flask App</title>
 </head>
 <body>
-    <h1>Welcome {{ user }} To My Flask App!</h1>
-    <p>This page was loaded from a HTML template.</p>
+    <h1>Welcome {{name}} To My Flask App!</h1>
+    <p>Now Ultilizing Jinja2 & Templates</p>
+   <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Business Name</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+
+
+
+
+    <script src="{{url_for('static', filename='bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js')}}"></script>
 </body>
 </html>
